@@ -21,13 +21,19 @@
 include:
   - board: nice_nano
     shield: ergodash_left
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000 -DCONFIG_BOOT_DELAY=9000
+    cmake-args: 
+      - -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000
+      - -DCONFIG_BOOT_DELAY=9000
     snippet: zmk-usb-logging
   - board: nice_nano
     shield: ergodash_right
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000 -DCONFIG_BOOT_DELAY=9000
+    cmake-args:
+      - -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000
+      - -DCONFIG_BOOT_DELAY=9000
     snippet: zmk-usb-logging
   - board: nice_nano
     shield: settings_reset
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000 -DCONFIG_BOOT_DELAY=9000
+    cmake-args: 
+      - -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=9000
+      - -DCONFIG_BOOT_DELAY=9000
     snippet: zmk-usb-logging
